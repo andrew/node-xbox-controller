@@ -1,6 +1,13 @@
 # Node Xbox Controller
 
-Interface for Xbox 360 game controller into node (wip)
+Interface for Wired Xbox 360 game controller into node (wip)
+
+Lots of low level details about the controller here: 
+* http://free60.org/GamePad
+* http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/UsbInfo
+* http://euc.jp/periphs/xbox-controller.ja.html
+
+Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver
 
 ## Usage
 
