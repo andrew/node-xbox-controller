@@ -45,4 +45,4 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
 
 ## Copyright
 
-Copyright (c) 2012 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/drone-xbox-controller/blob/master/LICENSE) for details.
+Copyright (c) 2012 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/node-xbox-controller/blob/master/LICENSE) for details.
