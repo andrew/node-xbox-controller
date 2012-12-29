@@ -30,6 +30,12 @@ Interface for Xbox 360 game controller into node (wip)
       console.log('right:move', position)
     })
 
+## TODO
+
+stick deadzones
+rumble control
+led control
+
 ## Copyright
 
 Copyright (c) 2012 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/drone-xbox-controller/blob/master/LICENSE) for details.
