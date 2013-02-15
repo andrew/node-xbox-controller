@@ -1,4 +1,4 @@
-var HID = require('HID');
+var HID = require('node-hid');
 var util = require('util');
 var events = require('events');
 
@@ -100,7 +100,7 @@ function XboxController()
     var devices = HID.devices();
     var device
     devices.forEach((function(d) {
-      if(typeof d === 'object' && d.product.toLowerCase() === 'controller') {
+      if(typeof d === 'object' && d.product.toLowerCase().indexOf('controller') !== -1) {
     
         device = new HID.HID(d.path)
       }
