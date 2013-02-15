@@ -1,4 +1,4 @@
-var XboxController = require('./xbox')
+var XboxController = require('../lib/xbox')
 var xbox = new XboxController
 
 

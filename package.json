@@ -1,15 +1,19 @@
 {
   "author": "Andrew Nesbitt",
-  "name": "node-xbox-controller",
+  "name": "xbox-controller",
   "description": "Xbox controller for node",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "os": ["darwin", "linux"],
   "repository": {
     "type": "git",
     "url": "git://github.com/andrew/node-xbox-controller.git"
   },
-  "main": "./xbox.js",
+  "main": "./lib/xbox.js",
   "dependencies": {
-    "node-hid": ">0"
+    "node-hid": ">0",
+    "colors" : ">0"
+  },
+  "scripts" : {
+    "test" : "node ./tests/test.js"
   }
 }
