@@ -39,7 +39,6 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
 
 ## TODO
 
-* stick deadzones
 * rumble control
 * led control
 
