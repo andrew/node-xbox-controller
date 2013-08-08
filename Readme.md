@@ -11,6 +11,7 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
 
 ## Usage
 
+    var XboxController = require('xbox-controller')
     var xbox = new XboxController
 
     xbox.on('a:press', function (key) {
@@ -40,7 +41,6 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
 ## TODO
 
 * rumble control
-* led control
 
 ## Copyright
 
