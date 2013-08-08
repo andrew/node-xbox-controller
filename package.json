@@ -20,8 +20,8 @@
   ],
   "main": "./lib/xbox.js",
   "dependencies": {
-    "node-hid": ">0",
-    "colors" : ">0"
+    "node-hid": ">=0",
+    "colors" : ">=0"
   },
   "scripts" : {
     "test" : "node ./tests/test.js"
