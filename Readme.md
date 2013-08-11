@@ -1,6 +1,6 @@
 # Node Xbox Controller
 
-Interface for Wired Xbox 360 game controller into node (wip)
+Interface for Xbox 360 game controller into Node.js
 
 Lots of low level details about the controller here: 
 * http://free60.org/GamePad
