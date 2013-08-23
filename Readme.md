@@ -65,10 +65,10 @@ Available LED patterns:
 
 Control left and right rumble motors:
 
-    var leftStrenght = 255;
+    var leftStrength = 255;
     var rightStrength = 255;
 
-    xbox.rumble(leftStrenght, rightStrength)
+    xbox.rumble(leftStrength, rightStrength)
 
 Where the strengths are between 0 and 255.
 
