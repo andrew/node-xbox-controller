@@ -28,8 +28,8 @@
   ],
   "main": "./lib/xbox.js",
   "dependencies": {
-    "node-hid": ">=0",
-    "colors": ">=0"
+    "node-hid": "~>0.2.3",
+    "colors": "~>0.6.2"
   },
   "scripts": {
     "test": "node ./tests/test.js"
