@@ -61,9 +61,16 @@ Available LED patterns:
     0x0C   Slow blinking*
     0x0D   Alternating (e.g. 1+4-2+3), then back to previous*
 
-## TODO
+## Rumble
 
-* rumble control
+Control left and right rumble motors:
+
+    var leftStrenght = 255;
+    var rightStrength = 255;
+
+    xbox.rumble(leftStrenght, rightStrength)
+
+Where the strengths are between 0 and 255.
 
 ## Copyright
 
