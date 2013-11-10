@@ -72,6 +72,12 @@ Control left and right rumble motors:
 
 Where the strengths are between 0 and 255.
 
+## Third Party Controllers
+
+If you have a third party controller with a different name you can specify the name when creating the controller:
+
+    var xbox = new XboxController('flight stick')
+
 ## Copyright
 
 Copyright (c) 2013 Andrew Nesbitt. See [LICENSE](https://github.com/andrew/node-xbox-controller/blob/master/LICENSE) for details.
