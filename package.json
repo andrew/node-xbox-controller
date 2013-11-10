@@ -29,7 +29,7 @@
   "main": "./lib/xbox.js",
   "dependencies": {
     "node-hid": "~>0.2.3",
-    "colors": "~>0.6.2"
+    "chalk": "~0.3.0"
   },
   "scripts": {
     "test": "node ./tests/test.js"
