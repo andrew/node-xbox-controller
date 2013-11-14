@@ -80,7 +80,7 @@ If you have a third party controller with a different name you can specify the n
     
 ## Configuring a Third Party Controller
 
-To configure a third party controller call:
+To configure a third party controller:
 
     XboxController.configure();
 
