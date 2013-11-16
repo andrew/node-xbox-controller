@@ -1,0 +1,62 @@
+{
+  "dup": {
+    "block": 2,
+    "bitwise": 1
+  },
+  "ddown":{
+    "block": 2,
+    "bitwise": 2
+  },
+  "dleft":{
+    "block": 2,
+    "bitwise": 4
+  },
+  "dright":{
+    "block": 2,
+    "bitwise": 8
+  },
+  "start":{
+    "block": 2,
+    "bitwise": 16
+  },
+  "back":{
+    "block": 2,
+    "bitwise": 32
+  },
+  "leftstick":{
+    "block": 2,
+    "bitwise": 64
+  },
+  "rightstick":{
+    "block": 2,
+    "bitwise": 128
+  },
+  "leftshoulder":{
+    "block": 3,
+    "bitwise": 1
+  },
+  "rightshoulder":{
+    "block": 3,
+    "bitwise": 2
+  },
+  "xboxbutton":{
+    "block": 3,
+    "bitwise": 4
+  },
+  "a":{
+    "block": 3,
+    "bitwise": 16
+  },
+  "b":{
+    "block": 3,
+    "bitwise": 32
+  },
+  "x":{
+    "block": 3,
+    "bitwise": 64
+  },
+  "y":{
+    "block": 3,
+    "bitwise": 128
+  }
+}
