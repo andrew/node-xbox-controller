@@ -1,0 +1,62 @@
+{
+  "dup": {
+    "block": 2,
+    "bitwise": 0x01
+  },
+  "ddown":{
+    "block": 2,
+    "bitwise": 0x02
+  },
+  "dleft":{
+    "block": 2,
+    "bitwise": 0x04
+  },
+  "dright":{
+    "block": 2,
+    "bitwise": 0x08
+  },
+  "start":{
+    "block": 2,
+    "bitwise": 0x10
+  },
+  "back":{
+    "block": 2,
+    "bitwise": 0x20
+  },
+  "leftstick":{
+    "block": 2,
+    "bitwise": 0x40
+  },
+  "rightstick":{
+    "block": 2,
+    "bitwise": 0x80
+  },
+  "leftshoulder":{
+    "block": 3,
+    "bitwise": 0x1
+  },
+  "rightshoulder":{
+    "block": 3,
+    "bitwise": 0x2
+  },
+  "xboxbutton":{
+    "block": 3,
+    "bitwise": 0x4
+  },
+  "a":{
+    "block": 3,
+    "bitwise": 0x10
+  },
+  "b":{
+    "block": 3,
+    "bitwise": 0x20
+  },
+  "x":{
+    "block": 3,
+    "bitwise": 0x40
+  },
+  "y":{
+    "block": 3,
+    "bitwise": 0x80
+  }
+}
