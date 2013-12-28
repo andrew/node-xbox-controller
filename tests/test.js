@@ -1,28 +1,29 @@
-var XboxController = require('../lib/xbox')
-var xbox = new XboxController
+var XboxController = require('../lib/xbox');
+var controllers = XboxController.allControllers();
 
+controllers.forEach(function(controller){
 
-xbox.on('a:press', function (key) {
-  console.log('a press');
-});
+  controller.on('a:press', function (key) {
+    console.log('a press on ' + controller.serialNumber);
+  });
 
-xbox.on('b:release', function (key) {
-    console.log('b release');
-});
+  controller.on('a:release', function (key) {
+    console.log('a press on ' + controller.serialNumber);
+  });
 
+  controller.on('b:release', function (key) {
+    console.log('b release on ' + controller.serialNumber);
+  });
 
-xbox.on('lefttrigger', function(position){
-  console.log('lefttrigger', position)
-})
+  controller.on('righttrigger', function(position){
+    console.log('righttrigger ' + position + ' on ' + controller.serialNumber);
+  });
 
-xbox.on('righttrigger', function(position){
-  console.log('righttrigger', position)
-})
+  controller.on('left:move', function(position){
+    console.log('left:move', position, ' on ' + controller.serialNumber)
+  });
 
-xbox.on('left:move', function(position){
-  console.log('left:move', position)
-})
-
-xbox.on('right:move', function(position){
-  console.log('right:move', position)
+  controller.on('right:move', function(position){
+    console.log('right:move', position, ' on ' + controller.serialNumber)
+  });
 })
