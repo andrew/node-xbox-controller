@@ -1,10 +1,10 @@
 {
-    "leftxState": 6,
-    "leftxPos": 7,
-    "leftyState": 8,
-    "leftyPos": 9,
-    "rightxState": 10,
-    "rightxPos": 11,
-    "rightyState": 12,
-    "rightyPos": 13
+  "leftxState": 6,
+  "leftxPos": 7,
+  "leftyState": 8,
+  "leftyPos": 9,
+  "rightxState": 10,
+  "rightxPos": 11,
+  "rightyState": 12,
+  "rightyPos": 13
 }
