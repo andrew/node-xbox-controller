@@ -5,7 +5,8 @@
   "version": "0.4.0",
   "os": [
     "darwin",
-    "linux"
+	 "linux",
+	 "windows"
   ],
   "repository": {
     "type": "git",
@@ -28,7 +29,7 @@
   ],
   "main": "./lib/xbox.js",
   "dependencies": {
-    "node-hid": "~>0.2.3",
+    "node-hid": "~>0.3.1",
     "chalk": "~0.3.0"
   },
   "scripts": {
