@@ -5,8 +5,8 @@
   "version": "0.4.0",
   "os": [
     "darwin",
-	 "linux",
-	 "windows"
+    "linux",
+    "windows"
   ],
   "repository": {
     "type": "git",
