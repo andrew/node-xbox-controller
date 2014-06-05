@@ -6,7 +6,7 @@
   "os": [
     "darwin",
     "linux",
-    "windows"
+    "win32"
   ],
   "repository": {
     "type": "git",
