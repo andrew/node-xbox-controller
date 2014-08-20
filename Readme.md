@@ -11,8 +11,8 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
 
 ## Usage
 
-    var XboxController = require('xbox-controller')
-    var xbox = new XboxController
+    var XboxController = require('xbox-controller');
+    var xbox = new XboxController;
 
     xbox.on('a:press', function (key) {
       console.log(key + ' press');
@@ -23,26 +23,26 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
     });
 
     xbox.on('lefttrigger', function(position){
-      console.log('lefttrigger', position)
-    })
+      console.log('lefttrigger', position);
+    });
 
     xbox.on('righttrigger', function(position){
-      console.log('righttrigger', position)
-    })
+      console.log('righttrigger', position);
+    });
 
     xbox.on('left:move', function(position){
-      console.log('left:move', position)
-    })
+      console.log('left:move', position);
+    });
 
     xbox.on('right:move', function(position){
-      console.log('right:move', position)
-    })
+      console.log('right:move', position);
+    });
     
 ## LEDs
 
 Set LED pattern on controller:
 
-    xbox.setLed(0x0A)
+    xbox.setLed(0x0A);
 
 Available LED patterns:
 
@@ -68,7 +68,7 @@ Control left and right rumble motors:
     var leftStrength = 255;
     var rightStrength = 255;
 
-    xbox.rumble(leftStrength, rightStrength)
+    xbox.rumble(leftStrength, rightStrength);
 
 Where the strengths are between 0 and 255.
 
@@ -76,7 +76,7 @@ Where the strengths are between 0 and 255.
 
 If you have a third party controller with a different name you can specify the name when creating the controller:
 
-    var xbox = new XboxController('flight stick')
+    var xbox = new XboxController('flight stick');
     
 ## Configuring a Third Party Controller
 
