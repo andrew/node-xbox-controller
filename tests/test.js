@@ -26,3 +26,8 @@ xbox.on('left:move', function (position) {
 xbox.on('right:move', function (position) {
   console.log('right:move', position);
 });
+
+
+xbox.within('righttrigger', [50,100], function(err, data){
+	console.log('rightttrigger within 50 and 100', err, data);
+});
