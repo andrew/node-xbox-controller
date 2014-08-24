@@ -11,38 +11,42 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
 
 ## Usage
 
-    var XboxController = require('xbox-controller');
-    var xbox = new XboxController;
+```javascript
+var XboxController = require('xbox-controller');
+var xbox = new XboxController;
 
-    xbox.on('a:press', function (key) {
-      console.log(key + ' press');
-    });
+xbox.on('a:press', function (key) {
+  console.log(key + ' press');
+});
 
-    xbox.on('b:release', function (key) {
-      console.log(key+' release');
-    });
+xbox.on('b:release', function (key) {
+  console.log(key+' release');
+});
 
-    xbox.on('lefttrigger', function(position){
-      console.log('lefttrigger', position);
-    });
+xbox.on('lefttrigger', function(position){
+  console.log('lefttrigger', position);
+});
 
-    xbox.on('righttrigger', function(position){
-      console.log('righttrigger', position);
-    });
+xbox.on('righttrigger', function(position){
+  console.log('righttrigger', position);
+});
 
-    xbox.on('left:move', function(position){
-      console.log('left:move', position);
-    });
+xbox.on('left:move', function(position){
+  console.log('left:move', position);
+});
 
-    xbox.on('right:move', function(position){
-      console.log('right:move', position);
-    });
+xbox.on('right:move', function(position){
+  console.log('right:move', position);
+});
+```
 
 ## LEDs
 
 Set LED pattern on controller:
 
-    xbox.setLed(0x0A);
+```javascript
+xbox.setLed(0x0A);
+```
 
 Available LED patterns:
 
@@ -65,10 +69,12 @@ Available LED patterns:
 
 Control left and right rumble motors:
 
-    var leftStrength = 255;
-    var rightStrength = 255;
+```javascript
+var leftStrength = 255;
+var rightStrength = 255;
 
-    xbox.rumble(leftStrength, rightStrength);
+xbox.rumble(leftStrength, rightStrength);
+```
 
 Where the strengths are between 0 and 255.
 
@@ -86,13 +92,17 @@ xbox.within('righttrigger', [50,100], function(err, data){
 
 If you have a third party controller with a different name you can specify the name when creating the controller:
 
-    var xbox = new XboxController('flight stick');
+```javascript
+var xbox = new XboxController('flight stick');
+```
 
 ## Configuring a Third Party Controller
 
 To configure a third party controller:
 
-    XboxController.configure();
+```javascript
+XboxController.configure();
+```
 
 ## Copyright
 
