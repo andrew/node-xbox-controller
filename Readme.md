@@ -2,7 +2,7 @@
 
 Interface for Xbox 360 game controller into Node.js
 
-Lots of low level details about the controller here: 
+Lots of low level details about the controller here:
 * http://free60.org/GamePad
 * http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/UsbInfo
 * http://euc.jp/periphs/xbox-controller.ja.html
@@ -37,7 +37,7 @@ Mac OSX driver: http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/O
     xbox.on('right:move', function(position){
       console.log('right:move', position);
     });
-    
+
 ## LEDs
 
 Set LED pattern on controller:
@@ -72,12 +72,22 @@ Control left and right rumble motors:
 
 Where the strengths are between 0 and 255.
 
+## Within function
+
+Listen for when a trigger or stick's position is within a particular range:
+
+```javascript
+xbox.within('righttrigger', [50,100], function(err, data){
+	console.log('rightttrigger within 50 and 100', err, data);
+});
+```
+
 ## Third Party Controllers
 
 If you have a third party controller with a different name you can specify the name when creating the controller:
 
     var xbox = new XboxController('flight stick');
-    
+
 ## Configuring a Third Party Controller
 
 To configure a third party controller:
