@@ -1,4 +1,4 @@
-# Node Xbox Controller
+# [Node Xbox Controller](http://libraries.io/npm/xbox-controller)
 
 Interface for Xbox 360 game controller into Node.js
 
