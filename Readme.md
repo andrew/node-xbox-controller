@@ -7,7 +7,7 @@ Lots of low level details about the controller here:
 * http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/UsbInfo
 * http://euc.jp/periphs/xbox-controller.ja.html
 
-Mac OSX driver: for [Lion/Snow Leopard](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver) 
+Mac OSX driver: for [Lion/Snow Leopard](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver)
 or for [Yosemite](https://github.com/d235j/360Controller/releases)
 
 ## Usage
@@ -38,6 +38,14 @@ xbox.on('left:move', function(position){
 
 xbox.on('right:move', function(position){
   console.log('right:move', position);
+});
+
+xbox.on('connected', function(){
+  console.log('Xbox controller connected');
+});
+
+xbox.on('not-found', function(){
+  console.log('Xbox controller could not be found');
 });
 ```
 
