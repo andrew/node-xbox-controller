@@ -30,7 +30,7 @@
   "main": "./lib/xbox.js",
   "dependencies": {
     "lodash": "~2.4.1",
-    "node-hid": "~0.3.2",
+    "node-hid": "~0.4.0",
     "chalk": "~0.5.1"
   },
   "scripts": {
