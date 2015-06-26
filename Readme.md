@@ -49,6 +49,8 @@ xbox.on('not-found', function(){
 });
 ```
 
+Also see the `example.js` for usage.
+
 ## LEDs
 
 Set LED pattern on controller:
@@ -97,13 +99,25 @@ xbox.within('righttrigger', [50,100], function(err, data){
 });
 ```
 
-## Third Party Controllers
+## Multiple Devices
 
-If you have a third party controller with a different name you can specify the name when creating the controller:
+On startup, if a device is in use, it will be skipped and the next available device will be used.  The serial number and
+path will be printed to the console for debugging.
+
+Use the printed serial number to specifically address devices if required, see Serial Numbers below.
+
+## Serial Numbers
+
+Each device has own serial number.  On startup, the serial number of the device detected will be printed to the console.
+
+To use a specific serial number, specify it when creating the controller:
 
 ```javascript
-var xbox = new XboxController('flight stick');
+var xbox = new XboxController('9BB004D0');
 ```
+
+If you have a third party controller without 'controller' in the name, specify the device serial number to use that
+ device.
 
 ## Configuring a Third Party Controller
 
