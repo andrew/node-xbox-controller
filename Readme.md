@@ -49,7 +49,7 @@ xbox.on('not-found', function(){
 });
 ```
 
-Also see the `example.js` for usage.
+Also see the [`example.js`](https://github.com/andrew/node-xbox-controller/blob/master/example.js) for usage.
 
 ## LEDs
 
