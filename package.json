@@ -2,7 +2,7 @@
   "author": "Andrew Nesbitt <andrewnez@gmail.com> (http://andrew.github.io)",
   "name": "xbox-controller",
   "description": "Xbox controller for node",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "os": [
     "darwin",
     "linux",
