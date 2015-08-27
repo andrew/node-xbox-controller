@@ -1,5 +1,5 @@
 
-var XboxController = require('xbox-controller');
+var XboxController = require('./lib/xbox');
 var xbox = new XboxController();
 
 console.log(xbox.serialNumber + ' online');
