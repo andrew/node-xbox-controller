@@ -1,5 +1,5 @@
 
-var XboxController = require('xbox-controller');
+var XboxController = require('./lib/xbox');
 var xbox = new XboxController();
 
 console.log(xbox.serialNumber + ' online');
@@ -60,14 +60,14 @@ xbox.on('y:release', function(key) {
 xbox.on('lefttrigger', function(position){
   var message = JSON.stringify({ serialNumber: xbox.serialNumber, button: 'lefttrigger', action:position });
   console.log(message);
-  
+
   xbox.rumble(0,position);
 });
 
 xbox.on('righttrigger', function(position){
   var message = JSON.stringify({ serialNumber: xbox.serialNumber, button: 'righttrigger', action:position });
   console.log(message);
-  
+
   xbox.rumble(position,0);
 });
 
@@ -79,7 +79,7 @@ xbox.on('righttrigger', function(position){
 
 xbox.on('left:move', function(position){
   if(position.x != 0 || position.y != 0) {
-  
+
     var message = JSON.stringify({ serialNumber: xbox.serialNumber, button: 'leftmove', action:position });
     console.log(message);
   }
@@ -87,7 +87,7 @@ xbox.on('left:move', function(position){
 
 xbox.on('right:move', function(position){
   if(position.x != 0 || position.y != 0) {
-    
+
     var message = JSON.stringify({ serialNumber: xbox.serialNumber, button: 'rightmove', action:position });
     console.log(message);
   }

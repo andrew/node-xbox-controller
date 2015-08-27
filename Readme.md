@@ -13,7 +13,7 @@ or for [Yosemite](https://github.com/d235j/360Controller/releases)
 ## Usage
 
 ```javascript
-var XboxController = require('xbox-controller');
+var XboxController = require('./lib/xbox');
 var xbox = new XboxController;
 
 xbox.on('a:press', function (key) {
