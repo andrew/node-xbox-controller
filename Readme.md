@@ -1,4 +1,4 @@
-# [Node Xbox Controller](http://libraries.io/npm/xbox-controller)
+# [Node Xbox Controller](https://libraries.io/npm/xbox-controller)
 
 Interface for Xbox 360 game controller into Node.js
 
@@ -8,7 +8,7 @@ Lots of low level details about the controller here:
 * http://euc.jp/periphs/xbox-controller.ja.html
 
 Mac OSX driver: for [Lion/Snow Leopard](http://tattiebogle.net/index.php/ProjectRoot/Xbox360Controller/OsxDriver)
-or for [Yosemite](https://github.com/d235j/360Controller/releases)
+or for [Yosemite](https://github.com/d235j/360Controller-n/releases)
 
 ## Install
 
