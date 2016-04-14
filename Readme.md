@@ -1,5 +1,10 @@
 # [Node Xbox Controller](https://libraries.io/npm/xbox-controller)
 
+[![npm version](https://badge.fury.io/js/xbox-controller.svg)](http://badge.fury.io/js/xbox-controller)
+[![Dependency Status](https://david-dm.org/andrew/node-xbox-controller.svg?theme=shields.io)](https://david-dm.org/andrew/node-xbox-controller)
+[![devDependency Status](https://david-dm.org/andrew/node-xbox-controller/dev-status.svg?theme=shields.io)](https://david-dm.org/andrew/node-xbox-controller#info=devDependencies)
+[![Gitter](https://img.shields.io/gitter/room/andrew/node-xbox-controller.svg?maxAge=2592000)](https://gitter.im/andrew/node-xbox-controller)
+
 Interface for Xbox 360 game controller into Node.js
 
 Lots of low level details about the controller here:
