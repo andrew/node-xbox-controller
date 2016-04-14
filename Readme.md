@@ -1,5 +1,7 @@
 # [Node Xbox Controller](https://libraries.io/npm/xbox-controller)
 
+[![Join the chat at https://gitter.im/andrew/node-xbox-controller](https://badges.gitter.im/andrew/node-xbox-controller.svg)](https://gitter.im/andrew/node-xbox-controller?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Interface for Xbox 360 game controller into Node.js
 
 Lots of low level details about the controller here:
