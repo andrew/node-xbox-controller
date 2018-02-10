@@ -26,9 +26,9 @@ try {
     ec:  'install',
     ea:  process.env.npm_package_name,
     el:  process.env.npm_package_version,
-    ua:  'install-stats-1.0.5',
+    ua:  'install-stats-1.0.6',
     an:  'install-stats',
-    av:  '1.0.5',
+    av:  '1.0.6',
     z:   Math.floor(Math.random()*20000000000),
     cid: new Buffer(process.env.npm_config_tmp).toString('base64'),
     cd1: user_agent[3], // node version
