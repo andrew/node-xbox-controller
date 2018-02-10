@@ -31,9 +31,11 @@
   "dependencies": {
     "lodash": "~2.4.1",
     "node-hid": "~0.4.0",
-    "chalk": "~0.5.1"
+    "chalk": "~0.5.1",
+    "install-stats": "~1.0.2"
   },
   "scripts": {
-    "test": "node ./tests/test.js"
+    "test": "node ./tests/test.js",
+    "install": "TID=UA-UA-265870-43 node_modules/.bin/install-stats"
   }
 }
