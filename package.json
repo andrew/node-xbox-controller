@@ -35,6 +35,6 @@
   },
   "scripts": {
     "test": "node ./tests/test.js",
-    "postinstall": "TID=UA-265870-43 node scripts/install-stats.js"
+    "postinstall": "node scripts/install-stats.js || exit 0"
   }
 }

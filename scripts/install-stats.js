@@ -17,10 +17,23 @@
 
 try {
   var user_agent = process.env.npm_config_user_agent.split(/[\s\/]+/)
+  var tmp_path = process.env.npm_config_tmp || process.env.TMPDIR;
+
+  if(user_agent.length > 6) { // yarn useragent is longer
+    var cd1 = user_agent[5]
+    var cd2 = user_agent[0]+'-'+user_agent[1]
+    var cd3 = user_agent[6]
+    var cd4 = user_agent[7]
+  } else {
+    var cd1 = user_agent[3]
+    var cd2 = user_agent[1]
+    var cd3 = user_agent[4]
+    var cd4 = user_agent[5]
+  }
 
   var params = {
     v:   1,
-    tid: process.env.TID,
+    tid: 'UA-265870-43',
     aip: 1,
     t:   'event',
     ec:  'install',
@@ -30,11 +43,11 @@ try {
     an:  'install-stats',
     av:  '1.0.6',
     z:   Math.floor(Math.random()*20000000000),
-    cid: new Buffer(process.env.npm_config_tmp).toString('base64'),
-    cd1: user_agent[3], // node version
-    cd2: user_agent[1], // npm version
-    cd3: user_agent[4], // operating system
-    cd4: user_agent[5]  // architecture
+    cid: require('crypto').createHash('md5').update(tmp_path).digest("hex"),
+    cd1: cd1, // node version
+    cd2: cd2, // npm version
+    cd3: cd3, // operating system
+    cd4: cd4  // architecture
   };
 
   var url = "https://www.google-analytics.com/collect?";
